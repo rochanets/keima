@@ -1,0 +1,281 @@
+/* HomePage - Mobile App Style */
+
+.home-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding-bottom: 80px;
+}
+
+/* Aurora Boreal Header */
+.aurora-header {
+  background: linear-gradient(135deg, 
+    rgba(220, 38, 127, 1) 0%, 
+    rgba(255, 107, 107, 0.9) 50%,
+    rgba(220, 38, 127, 1) 100%
+  );
+  padding: 3rem 1rem 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 20px rgba(220, 38, 127, 0.3);
+}
+
+.aurora-header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.aurora-header p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+  opacity: 0.9;
+}
+
+/* Seção de Boas-vindas */
+.welcome-section {
+  padding: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.welcome-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+}
+
+.welcome-section p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Stats Rápidas */
+.quick-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #dc267f;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Ações Principais */
+.main-actions {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-actions h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+.action-card {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: left;
+}
+
+.action-card:active {
+  transform: scale(0.98);
+}
+
+.action-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(220, 38, 127, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.action-content {
+  flex: 1;
+}
+
+.action-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.3;
+}
+
+.action-content p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.action-arrow {
+  font-size: 1.2rem;
+  color: var(--accent-color, #dc267f);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Seção de Progresso */
+.progress-section {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.progress-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 1rem 0;
+}
+
+.progress-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.progress-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #dc267f;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #dc267f, #ff6b6b);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Footer */
+.aurora-footer {
+  background: linear-gradient(90deg, 
+    rgba(220, 38, 127, 0.9) 0%, 
+    rgba(255, 107, 107, 0.7) 50%,
+    rgba(220, 38, 127, 0.9) 100%
+  );
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+.aurora-footer p {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Responsivo para desktop */
+@media (min-width: 768px) {
+  .home-page {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Header com botão de logout */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-title {
+  flex: 1;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
+
