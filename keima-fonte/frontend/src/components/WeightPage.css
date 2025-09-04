@@ -1,0 +1,293 @@
+.weight-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a0a0a 0%, #2d1b1b 25%, #4a1a1a 50%, #2d1b1b 75%, #1a0a0a 100%);
+  padding: 20px;
+  padding-bottom: 100px;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.weight-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.weight-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e, #ffb3b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.weight-header p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Card de Peso Atual */
+.current-weight-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.current-weight {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.weight-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff6b6b;
+}
+
+.weight-unit {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.weight-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+}
+
+.weight-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.weight-change.gain {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+}
+
+.weight-change.loss {
+  background: rgba(107, 255, 107, 0.2);
+  color: #6bff6b;
+}
+
+.weight-change.same {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Card do Formulário */
+.weight-form-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.weight-form-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #ff6b6b;
+}
+
+.weight-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.submit-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: linear-gradient(45deg, #ff5252, #ff7979);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.message.success {
+  background: rgba(107, 255, 107, 0.2);
+  color: #6bff6b;
+  border: 1px solid rgba(107, 255, 107, 0.3);
+}
+
+.message.error {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+/* Card do Histórico */
+.weight-history-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 107, 107, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.weight-history-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #ff6b6b;
+}
+
+.no-data {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  padding: 20px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 107, 107, 0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: all 0.3s ease;
+}
+
+.history-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 107, 107, 0.2);
+}
+
+.history-weight {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.history-weight .value {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.history-weight .unit {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.history-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .weight-page {
+    padding: 15px;
+  }
+  
+  .weight-header h1 {
+    font-size: 24px;
+  }
+  
+  .current-weight-card {
+    padding: 20px;
+  }
+  
+  .weight-value {
+    font-size: 40px;
+  }
+  
+  .weight-unit {
+    font-size: 20px;
+  }
+  
+  .weight-form-card,
+  .weight-history-card {
+    padding: 20px;
+  }
+}
+
