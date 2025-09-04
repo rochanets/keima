@@ -1,0 +1,21 @@
+# Node/Vite
+node_modules/
+dist/
+.vite/
+
+# Capacitor iOS / Xcode
+ios/App/build/
+ios/App/App/public/
+ios/DerivedData/
+ios/**/xcuserdata/
+ios/**/*.xcuserstate
+*.DS_Store
+
+# CocoaPods (se NÃO quiser versionar Pods)
+ios/Pods/
+ios/Podfile.lock
+
+# Logs/ambiente
+*.log
+.env
+*.local
